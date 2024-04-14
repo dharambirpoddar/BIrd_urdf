@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem2 - for URDF4">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0625249105466139 7.65099290034321E-08 -0.0790659915577752"
+        rpy="0 0 0" />
+      <mass
+        value="0.677453260012281" />
+      <inertia
+        ixx="0.000847340363516568"
+        ixy="-3.31422157163912E-09"
+        ixz="-0.00101773246736942"
+        iyy="0.0102378910372776"
+        iyz="3.21129712024959E-10"
+        izz="0.0097252990520348" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.811764705882353 0.788235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Right_wing">
+    <inertial>
+      <origin
+        xyz="0.064872 -0.26659 0.00225"
+        rpy="0 0 0" />
+      <mass
+        value="0.099558" />
+      <inertia
+        ixx="0.00015"
+        ixy="0.0001"
+        ixz="0.0001"
+        iyy="0.0002"
+        iyz="0.0001"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Right_wing.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.7 0.8 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Right_wing.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_wing"
+    type="revolute">
+    <origin
+      xyz="-0.25277 -0.005 -0.033847"
+      rpy="0 -0.16232 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Right_wing" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.78"
+      upper="0.78"
+      effort="0.3"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left_wing">
+    <inertial>
+      <origin
+        xyz="0.064872 0.26659 0.00225"
+        rpy="0 0 0" />
+      <mass
+        value="0.099558" />
+      <inertia
+        ixx="0.00015"
+        ixy="0.0001"
+        ixz="0.0001"
+        iyy="0.0002"
+        iyz="0.0001"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Left_wing.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.7 0.8 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Left_wing.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_wing"
+    type="revolute">
+    <origin
+      xyz="-0.25277 0.005 -0.033847"
+      rpy="0 -0.16232 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Left_wing" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0.78"
+      upper="-0.78"
+      effort="0.3"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right_tail">
+    <inertial>
+      <origin
+        xyz="0.076 -0.00225 0.14767"
+        rpy="0 0 0" />
+      <mass
+        value="0.022125" />
+      <inertia
+        ixx="0.00015"
+        ixy="0.0001"
+        ixz="0.0001"
+        iyy="0.0002"
+        iyz="0.001"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Right_tail.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Right_tail.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_tail"
+    type="revolute">
+    <origin
+      xyz="-0.60951 -0.035355 -0.043303"
+      rpy="-0.7854 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Right_tail" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.78"
+      upper="0.78"
+      effort="0.003"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left_tail">
+    <inertial>
+      <origin
+        xyz="0.076 0.00225 0.14767"
+        rpy="0 0 0" />
+      <mass
+        value="0.022125" />
+      <inertia
+        ixx="0.00015"
+        ixy="0.0001"
+        ixz="0.0001"
+        iyy="0.0002"
+        iyz="0.0001"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Left_tail.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem2 - for URDF4/meshes/Left_tail.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_tail"
+    type="revolute">
+    <origin
+      xyz="-0.60951 0.035355 -0.043303"
+      rpy="0.7854 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Left_tail" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0.78"
+      upper="-0.78"
+      effort="0.003"
+      velocity="0" />
+  </joint>
+</robot>
